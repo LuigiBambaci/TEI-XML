@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+        <div n="1" type="chap">                
+                <ab n="2">
+                    <app type="prds" xml:id="ch1_2a">
+                        <rdg wit="TM" source="L" type="originalis">הבל הבלים</rdg>
+                        <rdg wit="Hy" source="TM" type="formal">abal abalim</rdg>
+                        <rdg wit="G" type="formal">ματαιότης ματαιοτήτων</rdg>
+                        <rdg source="Hy" wit="G" ana="#phol" type="formal">ἀτμὸς ἀτμίδων sive ἀτμῶν</rdg>
+                    </app>
+                    אמר
+                    <app type="prds" xml:id="ch1_2b">
+                        <rdg type="Vorlage" source="G" xml:id="Vorl.1_hqhlt">הקהלת</rdg>
+                        <rdg wit="TM" source="L" type="deterior" ana="#del #part #art" xml:id="L.1.1_qhlt">קהלת</rdg>
+                        <rdg wit="P" type="deterior" ana="#del #part #art" synch="L.1.1_qhlt">ܩܘܗܠܬ</rdg>
+                        <rdg wit="G" type="potior" synch="Vorl.1_hqhlt" xml:id="G.1.1.o_ekkles">ὁ Ἐκκλησιαστής</rdg>                    
+                        <rdg wit="An" type="potior" synch="G.1.1.o_ekkles">Ժողովօղն</rdg>
+                    </app>                
+                    הבלים הכל הבל                  
+                </ab>
+                <ab n="3">
+                    <app type="prds" xml:id="ch1_3a">
+                        <rdg wit="TM" source="L" type="originalis">מה יתרון</rdg>
+                        <rdg wit="G" type="formal">τίς περισσεία</rdg>
+                        <rdg wit="G" source="α" ana="#phol" type="formal">τί πλέον</rdg>
+                        <rdg wit="G" source="σ" ana="#phol" type="formal">τί πλέον</rdg>
+                        <rdg wit="Ae" n="P C O C1 B B1 L1 A3" ana="#add. #morph #suff #pss" type="deterior">ፍድፋዴሁ</rdg>
+                    </app>
+                    <app type="prds" xml:id="ch1_3b">
+                        <rdg wit="TM" source="L" type="originalis">לאדם</rdg>
+                        <rdg wit="TM" source="K" n="147" type="adiaph" ana="#n.">לאיש</rdg>
+                        <rdg wit="G" type="potior">τῷ ἀνθρώπῳ</rdg>
+                        <rdg wit="G" source="α" type="adiaph" ana="#del #morph #art">ἀνθρώπῳ</rdg>
+                        <rdg wit="G" source="σ" type="adiaph" ana="#del #morph #art">ἀνθρώπῳ</rdg>
+                    </app>
+                    בכל 
+                    <app type="prds" xml:id="ch1_3c">
+                        <rdg wit="TM" source="L" xml:id="L.v.1_3b" type="deterior">עמלו</rdg>
+                        <rdg type="Vorlage" xml:id="Vorl.1_3a">עמל</rdg>
+                        <rdg wit="TM" source="K" n="56" ana="#subst #morph #suff #pss" type="deterior" synch="L.v.1_3b">עמלי</rdg>
+                        <rdg wit="Q"/>
+                        <rdg wit="T" type="deterior" synch="L.v.1_3b">טורחיה</rdg>
+                        <rdg wit="P" ana="#del #morph #suff #pss" synch="Vorl.1_3a" type="potior">ܥܡܠܐ</rdg>
+                        <rdg wit="V" synch="L.v.1_3b" type="deterior">labore suo</rdg>
+                        <rdg wit="Hy" synch="L.v.1_3b" type="deterior">labore suo</rdg>
+                        <rdg wit="G" xml:id="G.v.1_3b" synch="L.v.1_3b" type="deterior">μόχθῳ αὐτοῦ</rdg>
+                        <rdg wit="G" source="α" ana="#del #morph #suff #pss" type="potior" synch="Vorl.1_3a">κόπῳ</rdg>
+                        <rdg wit="Ae" synch="G.v.1_3b" type="deterior">ዳማሁ</rdg>
+                        <rdg wit="Ae" n="A2" ana="#del #morph #suff #pss" synch="Vorl.1_3a" type="potior">ጻሚሀ</rdg>                     
+                        <rdg wit="An" synch="G.v.1_3b" type="deterior">վաստակս իւր</rdg>
+                    </app>
+                    שיעמל תחת
+                    <app type="prds" xml:id="ch1_3e">
+                        <rdg wit="TM" source="L" xml:id="L.v.1_3a" type="deterior">השמש</rdg>
+                        <rdg type="Vorlage" xml:id="Vorl.ch1_3_shamaim">שמים</rdg>
+                        <rdg wit="T" synch="L.v.1_3a" type="deterior">שימשא</rdg>
+                        <rdg wit="P" ana=" #subst #sem #n." synch="Vorl.ch1_3_shamaim" type="potior">ܫܡܝܐ</rdg>
+                        <rdg wit="P" n="7a1" synch="L.v.1_3a" type="deterior">ܫܡܫܐ</rdg>
+                        <rdg wit="V" synch="L.v.1_3a" type="deterior">sole</rdg>
+                        <rdg wit="Hy" synch="L.v.1_3a" type="deterior">sole</rdg>
+                        <rdg wit="G" synch="L.v.1_3a" xml:id="G.v.1_3a" type="deterior">τὸν ἥλιον</rdg>
+                        <rdg wit="Ae" synch="G.v.1_3a" type="deterior">ፀሓይ</rdg>
+                        <rdg wit="Ae" n="all" ana="#subst #sem #n." synch="Vorl.ch1_3_shamaim" type="potior">ሰማይ</rdg>                    
+                        <rdg wit="An"  synch="G.v.1_3a" type="deterior">ընդ արեգակամբ</rdg>
+                        <rdg wit="An" source="Osk" ana="#morph #part #prep" synch="G.v.1_3a" type="deterior">ի ներքոյ արեգական</rdg>
+                    </app>
+                </ab></div>
+      </body>
+  </text>
+</TEI>
