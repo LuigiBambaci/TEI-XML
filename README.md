@@ -1,2 +1,2 @@
 # TEI-XML
-encoding tools, textual criticism
+encoding tools, textual criticism, critical editions
