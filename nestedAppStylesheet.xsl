@@ -111,11 +111,11 @@
                         <br/>
                         <xsl:text>\usepackage{endnotes}</xsl:text>
                         <br/>
-                        <xsl:text>\addtolength{\skip\Efootins}{4.5mm}		% aumenta la distanza tra testo critico e apparato</xsl:text>
+                        <xsl:text>\addtolength{\skip\Efootins}{4.5mm}    % aumenta la distanza tra testo critico e apparato</xsl:text>
                         <br/>
-                        <xsl:text>\let\Efootnoterule=\relax				% toglie la barra di separazione tra testo critico e apparato</xsl:text>
+                        <xsl:text>\let\Efootnoterule=\relax		 % toglie la barra di separazione tra testo critico e apparato</xsl:text>
                         <br/>
-                        <xsl:text>\renewcommand{\notenumfont}{\bfseries}	% mette in grassetto i numeri nell'apparato </xsl:text>
+                        <xsl:text>\renewcommand{\notenumfont}{\bfseries} % mette in grassetto i numeri nell'apparato </xsl:text>
                         <br/>
                 </font>
                 <xsl:apply-templates/>
@@ -235,7 +235,7 @@
                         </b>
                 </font>
                 <xsl:if test=".[node()][@wit]">
-                        <!-- se il lemma NON VUOTO presenta dei testimoni, seleziona <lem> MA NON i discendenti e posiziona in \lemma{ } i testimoni -->
+                        <!-- if <lem> is not a milestone + @with, selects and puts <lem> (but NOT its descendant) within \lemma{}-->
                         <font color="green">
                                 <xsl:text>\lemma{</xsl:text>
                                 <xsl:value-of select=".[not(descendant-or-self::tei:rdg)]"/>
@@ -248,7 +248,7 @@
                         </font>
                 </xsl:if>
                 <xsl:if test=".[not(node())][@wit]">
-                        <!-- se il lemma VUOTO presenta dei testimoni, inserisce un obelos e posiziona in \lemma{ } i testimoni -->
+                        <!-- if <lem> is a milestone + @with, selects  and puts the preceding words (with conditions) within \lemma{}-->
                         <font color="green">
                                 <xsl:text>\lemma{</xsl:text>
                                 <xsl:value-of select="./preceding::*[not(self::tei:rdg)][not(self::tei:note)][not(ancestor-or-self::tei:rdg)][1]"/>
@@ -262,7 +262,7 @@
                         </font>
                 </xsl:if>
                 <xsl:if test=".[not(node())]">
-                        <!-- se il lemma VUOTO presenta dei testimoni, inserisce un obelos e posiziona in \lemma{ } i testimoni -->
+                        <!-- if <lem> is a milestone without @with, selects and puts the preceding words (with conditions) within \lemma{}-->
                         <font color="green">
                                 <xsl:text>\lemma{</xsl:text>
                                 <xsl:value-of select="./preceding::*[not(self::tei:rdg)][not(self::tei:note)][not(ancestor-or-self::tei:rdg)][1]"/>
@@ -270,21 +270,12 @@
                         </font>
                 </xsl:if>
 
-
-                <!-- RDG -->
-
-                <!--  <xsl:for-each select=".">
-                        <xsl:if test="count(child::*) > 3">
-                                <xsl:text>TRUE!</xsl:text>
-                        </xsl:if>
-                </xsl:for-each>-->
-
-                <font color="red">
+                <!--selects RDG within \Efootnote{}-- >
+               <font color="red">
                         <xsl:text>\Efootnote{</xsl:text>
                 </font>
                 <xsl:for-each select="following-sibling::tei:rdg">
-
-                        <!-- seleziona le rdg -->
+                      
                         <xsl:if test="./preceding-sibling::tei:lem[not(node())]">
                                 <xsl:text>\textit{add.} </xsl:text>
                         </xsl:if>
@@ -307,11 +298,10 @@
                                 <xsl:text>} </xsl:text>
                         </font>
                 </xsl:for-each>
-                <xsl:for-each select="following-sibling::*/tei:rdg">
-                        <!-- seleziona le rdg figlie di rdgGrp -->
-                        <xsl:value-of select="."/>
+                <xsl:for-each select="following-sibling::*/tei:rdg"> <!-- selects rdg if child of... (e. g. rdgGrp) -->
+                       <xsl:value-of select="."/>
                         <xsl:if test=".[not(node())]">
-                                <!-- se la variante è vuota inserisce om. -->
+                                <!-- if rdg is empty, it writes om. -->
                                 <font color="orange">
                                         <xsl:text> \emph{om.}</xsl:text>
                                 </font>
@@ -351,10 +341,7 @@
 
 
         <!--=============================================== GARBAGE COLLECTOR====================================================== -->
-        <xsl:template match="tei:note"/>
-        <xsl:template match="tei:div[@n = 'Capitula 14-50']"/>
-        <xsl:template match="tei:div[@n = 'Capitula 51-146']"/>
-        <xsl:template match="tei:div[@n = 'Prologo']"/>
+        <xsl:template match="tei:note"/>        
         <xsl:template match="tei:titleStmt"/>
         <xsl:template match="tei:editionStmt"/>
         <xsl:template match="tei:publicationStmt"/>
