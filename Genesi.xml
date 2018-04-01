@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-stylesheet type="text/xsl" href="Genesi%20Stylesheet.xsl"?>
+    
+--><?xml-stylesheet type="text/xsl" href="../../../TIROCINIO/Critical%20Text%20LaTeX/nestedAppStylesheet.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="criticalText">
+                <head>
+                    <w>INCIPIT</w>
+                    <w>LIBER</w>                   
+                    <w>BRESITH</w>
+                    <w>ID</w>
+                    <w>EST</w>
+                    <w>GENESIS</w>
+                    <app>
+                        <lem wit="#G #A #O #C #Σ #Λ #Τ #Μ #Φ"/>
+                        <rdg wit="#c">liber genesis hebraice beresith</rdg>
+                    </app>
+                </head>
+                <app>
+                    <lem>
+                        <ab n="1">
+                            <app>
+                                <lem wit="#G">
+                                    <w>In</w>
+                                    <w>principio</w>
+                                </lem>
+                                <rdg wit="#rel">
+                                    <w>Ab</w>
+                                    <w>initio</w>
+                                </rdg>
+                            </app>
+                            <w>creavit</w>
+                            <w>Deus</w>
+                            <app>
+                                <lem wit="#G">
+                                    <w>caelum</w>
+                                </lem>
+                                <rdg wit="#C">
+                                    <w>selum</w>
+                                </rdg>
+                                <rdg wit="#A">
+                                    <w>celum</w>
+                                </rdg>
+                            </app>
+                            <w>et</w>
+                            <w>terram</w>
+                        </ab>
+                        <ab n="2">
+                            <w>Terra</w>
+                            <w>autem</w>
+                            <app>
+                                <lem wit="#C"/>
+                                <rdg wit="#rel">
+                                    <w>erat</w>
+                                </rdg>
+                            </app>
+                            <w>inanis</w>
+                            <w>et</w>
+                            <w>vacua</w>, 
+                            <w>et</w>
+                            <w>tenebrae</w>
+                            <app>
+                                <lem wit="#D">
+                                    <w>erant</w>
+                                </lem>
+                                <rdg wit="#A #B"/>
+                            </app>
+                            <w>super</w>
+                            <w>faciem</w>
+                            <w>abyssi</w>:
+                            <w>et</w>
+                            <w>spiritus</w>
+                            <w>Dei</w>
+                            <app>
+                                <lem wit="#rel">
+                                    <w>ferebatur</w>
+                                </lem>
+                                <rdg wit="#S"/>
+                            </app>
+                            <w>super</w>
+                            <w>aquas</w>.
+                        </ab>
+                        <ab n="3">
+                            <w>Dixitque</w>
+                            <w>Deus</w>: 
+                            <w>Fiat</w>
+                            <w>lux</w>. 
+                            <app>
+                                <lem>
+                                    <w>Et</w>
+                                    <w>facta</w>
+                                    <app>
+                                        <lem wit="#rel">
+                                            <w>est</w>
+                                        </lem>
+                                        <rdg wit="#c"/>
+                                        <rdg wit="#Ρ">
+                                            <w>fuit</w>
+                                        </rdg>
+                                    </app>
+                                    <w>lux</w>
+                                </lem>
+                                <rdg wit="#F">
+                                    <w>et</w>
+                                    <w>lux</w>
+                                    <w>facta</w>
+                                    <w>est</w>
+                                </rdg>
+                            </app>.
+                        </ab>
+                    </lem>
+                    <rdg wit="#Ω #Ξ"/>
+                </app>
+                <ab n="4">
+                    <app>
+                        <lem>
+                            <app>
+                                <lem wit="#TM">
+                                    <w>Et</w>
+                                </lem>
+                                <rdg wit="#N"/>
+                            </app>
+                            <w>vidit</w>
+                            <app>
+                                <lem>
+                                    <w>Deus</w>
+                                    <app>
+                                        <lem wit="#A"></lem>
+                                        <rdg wit="#Z">
+                                            <w>Dominus</w>
+                                        </rdg>
+                                    </app>
+                                </lem>
+                                <rdg wit="#d">
+                                    <w>Dominus</w>
+                                </rdg>
+                            </app>
+                            <w>lucem</w>
+                            <app>
+                                <lem wit="#A #B #V">
+                                    <w>quod</w>
+                                </lem>
+                                <rdg wit="#rel">
+                                    <w>quia</w>
+                                </rdg>
+                            </app>
+                            <w>esset</w>
+                            <w>bona</w>:
+                            <w>et</w>
+                            <w>divisit</w>
+                            <w>lucem</w>
+                            <app>
+                                <lem wit="#multi">
+                                    <w>a</w>
+                                    <w>tenebris</w>
+                                </lem>
+                                <rdg wit="#pau.">
+                                    <w>ac</w>
+                                    <w>tenebras</w>
+                                </rdg>
+                                <rdg wit="#C">
+                                    <w>a</w>
+                                    <w>tenebras</w>
+                                </rdg>
+                            </app>.
+                        </lem>
+                        <rdg wit="#L"/>
+                    </app>
+                </ab>
+                <ab n="5">
+                    <w>Appellavitque</w>
+                    <w>lucem</w>
+                    <app>
+                        <lem wit="#tot">
+                            <w>Diem</w>
+                        </lem>
+                        <rdg resp="#Bent">
+                            <w>caelum</w>
+                        </rdg>
+                    </app>, 
+                    <app>
+                        <lem wit="#G"/>
+                        <rdg wit="#rel">
+                            <w>et</w>
+                        </rdg>
+                    </app>
+                    <w>tenebras</w>
+                    <w>Noctem</w>: 
+                    <w>factumque</w>
+                    <w>est</w>
+                    <w>vespere</w>
+                    <app>
+                        <lem>
+                            <w>et</w>
+                            <app>
+                                <lem wit="#Y">
+                                    <w>mane</w>
+                                </lem>
+                                <rdg wit="#f">
+                                    <w>mare</w>
+                                </rdg>
+                            </app>, 
+                            <app>
+                                <lem wit="#Α #Β #Σ">
+                                    <w>dies</w>
+                                </lem>
+                                <rdg wit="#A"/>
+                                <rdg wit="#Λ">
+                                    <w>diem</w>
+                                </rdg>
+                            </app>
+                            <w>unus</w>.
+                        </lem>
+                        <rdg wit="#D"/>
+                    </app>
+                </ab>
+                <ab n="6">
+                    <w>Dixit</w>
+                    <w>quoque</w>
+                    <w>Deus</w>: 
+                    <w>Fiat</w>
+                    <app>
+                        <lem>
+                            <app>
+                                <lem wit="#R #X">
+                                    <w>firmamentum</w>
+                                </lem>
+                                <rdg wit="#c">
+                                    <w>caelum</w>
+                                </rdg>
+                            </app>
+                            <w>in</w>
+                            <w>medio</w>
+                            <w>aquarum</w>: 
+                            <w>et</w>
+                            <w>dividat</w>
+                        </lem>
+                        <rdg wit="#f"/>
+                    </app>
+                    <w>aquas</w>
+                    <w>ab</w>
+                    <w>aquis</w>.
+                </ab>
+                <ab n="7">
+                    <w>Et</w>
+                    <w>fecit</w>
+                    <w>Deus</w>
+                    <w>firmamentum</w>,
+                    <w>divisitque</w>
+                    <w>aquas</w>,
+                    <w>quae</w>
+                    <w>erant</w>
+                    <w>sub</w>
+                    <w>firmamento</w>,
+                    <w>ab</w>
+                    <w>his</w>,
+                    <w>quae</w>
+                    <w>erant</w>
+                    <w>super</w>
+                    <app>
+                        <lem>
+                            <app>
+                                <lem>
+                                    <app>
+                                        <lem>
+                                            <app>
+                                                <lem wit="#B #W">
+                                                    <w>firmamentum</w>
+                                                </lem>
+                                                <rdg wit="#D"/>
+                                            </app>
+                                        </lem>
+                                        <rdg resp="Corn">
+                                            <w>caelum</w>
+                                        </rdg>
+                                    </app>
+                                </lem>
+                                <rdg wit="#A">
+                                    <w>phirmamentum</w>
+                                </rdg>
+                                <rdg wit="#B">
+                                    <w>phyrmamentum</w>
+                                </rdg>
+                                <rdg wit="#C">
+                                    <w>fermamentum</w>
+                                </rdg>
+                            </app>
+                        </lem>
+                        <rdg wit="#L"/>
+                    </app>. 
+                    <w>Et</w>
+                    <w>factum</w>
+                    <w>est</w>
+                    <w>ita</w>.
+                </ab>
+                <ab n="8">
+                    <app>
+                        <lem wit="#O"/>
+                        <rdg wit="#rel">
+                            <w>Vocavitque</w>
+                            <w>Deus</w>
+                            <w>firmamentum</w>,
+                            <w>Caelum</w>
+                            <w>et</w>
+                        </rdg>
+                    </app>
+                    <w>factum</w>
+                    <w>est</w>
+                    <app>
+                        <lem wit="#rel">
+                            <w>vespere</w>
+                        </lem>
+                        <rdgGrp>
+                            <rdg wit="A">
+                                <w>nocte</w>
+                            </rdg>
+                            <rdg wit="B">
+                                <w>noctem</w>
+                            </rdg>
+                            <rdg wit="C">
+                                <w>vesper</w>
+                            </rdg>
+                        </rdgGrp>
+                        <rdg wit="#A"/>
+                    </app>
+                    <w>et</w>
+                    <w>mane</w>,
+                    <w>dies</w>
+                    <w>secundus</w>.
+                </ab>
+                <ab n="9">
+                    <w>Dixit</w>
+                    <w>vero</w>
+                    <w>Deus</w>: 
+                    <w>Congregentur</w>
+                    <w>aquae</w>,
+                    <w>quae</w>
+                    <w>sub</w>
+                    <w>caelo</w>
+                    <w>sunt</w>,
+                    <w>in</w>
+                    <w>locum</w>
+                    <w>unum</w>:
+                    <w>et</w>
+                    <w>appareat</w>
+                    <w>arida</w>.
+                    <w>Et</w>
+                    <w>factum</w>
+                    <w>est</w>
+                    <w>ita</w>.
+                </ab>
+                <ab n="10">
+                    <w>Et</w>
+                    <w>vocavit</w>
+                    <w>Deus</w>
+                    <w>aridam</w>
+                    <w>Terram</w>, 
+                   <app>
+                        <lem>
+                            <app>
+                                <lem>
+                                    <app>
+                                        <lem>
+                                            <w>congregationesque</w>
+                                        </lem>
+                                        <rdg wit="#e">
+                                            <w>congregatsionesque</w>
+                                        </rdg>
+                                    </app>
+                                </lem>
+                                <rdg wit="#A">
+                                    <w>et</w>
+                                    <w>congregationes</w>
+                                </rdg>
+                                <rdg wit="#c"/>
+                            </app>
+                            <w>aquarum</w>
+                            <w>appellavit</w>
+                            <w>Maria</w>. 
+                        </lem>
+                        <rdg wit="#f"/>
+                    </app>
+                    <w>Et</w>
+                    <w>vidit</w>
+                    <w>Deus</w>
+                    <w>quod</w>
+                    <w>esset</w>
+                    <app>
+                        <lem wit="#V">bonum</lem>
+                        <rdg wit="#A #B">perfectum</rdg>
+                        <rdg wit="#C">justum</rdg>
+                        <rdg wit="#D">sanctum</rdg>
+                    </app>.
+                </ab>
+            </div>
+        </body>
+    </text>
+</TEI>
